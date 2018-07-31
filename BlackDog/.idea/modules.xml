@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api/Api.iml" filepath="$PROJECT_DIR$/api/Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlackDog-Api/Api.iml" filepath="$PROJECT_DIR$/BlackDog-Api/Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlackDog.iml" filepath="$PROJECT_DIR$/BlackDog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlackDog-Common/BlackDog-Common.iml" filepath="$PROJECT_DIR$/BlackDog-Common/BlackDog-Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/BlackDog-Web/BlackDog-Web.iml" filepath="$PROJECT_DIR$/BlackDog-Web/BlackDog-Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/Common.iml" filepath="$PROJECT_DIR$/common/Common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web/Web.iml" filepath="$PROJECT_DIR$/web/Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../BlackDog/bean/bean.iml" filepath="$PROJECT_DIR$/../BlackDog/bean/bean.iml" />
+    </modules>
+  </component>
+</project>

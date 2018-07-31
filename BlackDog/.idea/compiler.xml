@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Api" />
+        <module name="bean" />
+        <module name="BlackDog-Common" />
+        <module name="BlackDog-Web" />
+        <module name="Common" />
+        <module name="Web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="Api" target="1.8" />
+      <module name="bean" target="1.8" />
+      <module name="BlackDog" target="1.8" />
+      <module name="Common" target="1.8" />
+      <module name="Web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
