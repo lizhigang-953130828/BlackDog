@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/user")
-public class UserController extends BaseInjection implements BaseController<UserController> {
+public class UserController extends BaseInjection implements BaseController<User> {
 
     /**
      * 用户登陆
@@ -38,7 +38,7 @@ public class UserController extends BaseInjection implements BaseController<User
     }
 
     @Override
-    public String doAdd(HttpServletRequest request, UserController object) {
+    public String doAdd(HttpServletRequest request, User object) {
         return null;
     }
 
@@ -48,7 +48,7 @@ public class UserController extends BaseInjection implements BaseController<User
     }
 
     @Override
-    public String doUpdata(HttpServletRequest request, UserController object) {
+    public String doUpdata(HttpServletRequest request, User object) {
         return null;
     }
 
