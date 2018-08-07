@@ -89,6 +89,7 @@ public class ShiroConfig {
         return securityManager;
     }
 
+    @Bean
     public BlackDogShiroRealm myShiroRealm(){
         return new BlackDogShiroRealm();
     }

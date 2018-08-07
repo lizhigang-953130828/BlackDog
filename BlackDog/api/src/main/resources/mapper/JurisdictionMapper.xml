@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lizhigang.api.dao.UserJurisdictionMapper" >
+  <resultMap id="BaseResultMap" type="com.lizhigang.bean.user.Jurisdiction" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="JurisdictionName" property="jurisdictionname" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, JurisdictionName
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from sys_user_jurisdiction
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from sys_user_jurisdiction
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insertSelective" parameterType="com.lizhigang.bean.user.Jurisdiction" >
+    insert into sys_user_jurisdiction
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="jurisdictionname != null" >
+        JurisdictionName,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="jurisdictionname != null" >
+        #{jurisdictionname,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lizhigang.bean.user.Jurisdiction" >
+    update sys_user_jurisdiction
+    <set >
+      <if test="jurisdictionname != null" >
+        JurisdictionName = #{jurisdictionname,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="getByCriteriaMapper" parameterType="com.lizhigang.common.Criteria" resultMap="BaseResultMap">
+    SELECT * FROM sys_user_jurisdiction
+    <where>
+      <if test="condition.id != null">
+        id = #{condition.id}
+      </if>
+    </where>
+  </select>
+</mapper>

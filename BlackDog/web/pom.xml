@@ -20,7 +20,7 @@
     <dependencies>
         <dependency>
             <groupId>com.lizhigang.blackdog</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>bean</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -28,7 +28,13 @@
             <artifactId>api</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.lizhigang.blackdog</groupId>
+            <artifactId>common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
+
     <!--spring boot打包的话需要指定一个唯一的入门-->
     <build>
         <plugins>
@@ -37,7 +43,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <!-- 指定该Main Class为全局的唯一入口 -->
-                    <mainClass>BlackdogApplication</mainClass>
+                    <mainClass></mainClass>
                     <layout>ZIP</layout>
                 </configuration>
                 <executions>

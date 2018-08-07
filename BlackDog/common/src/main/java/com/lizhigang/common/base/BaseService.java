@@ -1,12 +1,19 @@
 package com.lizhigang.common.base;
 
+import com.lizhigang.common.Criteria;
+
+/**
+ * Service基类
+ * @param <T>
+ * @author lizhigang
+ */
 public interface BaseService<T> {
 
-    T getById(Integer id);
+    T getByCriteria(Criteria criteria);
 
-    int insert(T obj);
+    Integer insert(T obj);
 
-    int updateById(T obj);
+    Integer updateById(T obj);
 
-    int deleteById(Integer id);
+    Integer deleteById(Integer id);
 }

@@ -1,7 +1,9 @@
 package com.lizhigang.api.service.shiro;
 
-import com.lizhigang.api.service.UserService;
+import com.lizhigang.api.dao.user.JurisdictionMapper;
+import com.lizhigang.api.dao.user.UserMapper;
 import com.lizhigang.bean.user.User;
+import com.lizhigang.common.Criteria;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
@@ -11,6 +13,7 @@ import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -18,7 +21,10 @@ import java.util.Set;
 public class BlackDogShiroRealm extends AuthorizingRealm {
 
     @Autowired
-    private UserService userService;
+    private UserMapper userMapper;
+
+    @Autowired
+    private JurisdictionMapper jurisdictionMapper;
 
     /**
      * 授权用户权限
@@ -27,19 +33,14 @@ public class BlackDogShiroRealm extends AuthorizingRealm {
      */
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-        //获取用户
+        // 获取用户
         User user = (User)SecurityUtils.getSubject().getPrincipal();
         SimpleAuthorizationInfo info =  new SimpleAuthorizationInfo();
         //获取用户角色
-        //Set<String> roleSet = new HashSet<String>();
-        //roleSet.add("100002");
-        //info.setRoles(roleSet);
-        //获取用户权限
-        Set<String> permissionSet = new HashSet<String>();
-        permissionSet.add("sys:test");
-        permissionSet.add("sys:fuck");
-        permissionSet.add("sys:shit");
-
+        String jurisdiction = jurisdictionMapper.getByCriteriaMapper(new Criteria().put("id",user.getJurisdictionIdw())).getJurisdictionname();
+        Set<String> players = new HashSet(Arrays.asList(jurisdiction.split(",")));
+        Set<String> permissionSet = new HashSet();
+        players.forEach((player) -> permissionSet.add(player));
         info.setStringPermissions(permissionSet);
         return info;
     }
@@ -53,7 +54,7 @@ public class BlackDogShiroRealm extends AuthorizingRealm {
     @Override
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;
-        User user = userService.getByUserName(token.getUsername());
+        User user = (User) userMapper.getByCriteriaMapper(new Criteria().put("userName",token.getUsername()));
         //密码进行加密处理
         //String encryptionPwd = new SimpleHash("MD5", user.getPassword(), "2016", 1).toString();      // 加密方式、需加密值、盐值、加密次数
         return new SimpleAuthenticationInfo(user, user.getPassword(), getName());

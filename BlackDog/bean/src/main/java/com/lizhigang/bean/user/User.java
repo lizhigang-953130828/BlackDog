@@ -70,4 +70,17 @@ public class User {
     public void setJurisdictionIdw(Integer jurisdictionIdw) {
         this.jurisdictionIdw = jurisdictionIdw;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", tel='" + tel + '\'' +
+                ", individualSignature='" + individualSignature + '\'' +
+                ", professionaTag='" + professionaTag + '\'' +
+                ", jurisdictionIdw=" + jurisdictionIdw +
+                '}';
+    }
 }

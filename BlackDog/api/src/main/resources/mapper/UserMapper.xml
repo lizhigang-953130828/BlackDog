@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.lizhigang.common.mybatis.mapper.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.lizhigang.common.mybatis.bean.User" >
+<mapper namespace="com.lizhigang.api.dao.user.UserMapper" >
+  <resultMap id="BaseResultMap" type="com.lizhigang.bean.user.User" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="user_name" property="userName" jdbcType="VARCHAR" />
     <result column="password" property="password" jdbcType="VARCHAR" />
@@ -23,7 +23,7 @@
     delete from sys_user
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="com.lizhigang.common.mybatis.bean.User" >
+  <insert id="insert" parameterType="com.lizhigang.bean.user.User" >
     insert into sys_user (id, user_name, password,
       tel, individual_signature, professiona_tag,
       jurisdiction_idw)
@@ -31,7 +31,7 @@
       #{tel,jdbcType=VARCHAR}, #{individualSignature,jdbcType=VARCHAR}, #{professionaTag,jdbcType=VARCHAR},
       #{jurisdictionIdw,jdbcType=INTEGER})
   </insert>
-  <insert id="insertSelective" parameterType="com.lizhigang.common.mybatis.bean.User" >
+  <insert id="insertSelective" parameterType="com.lizhigang.bean.user.User" >
     insert into sys_user
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -80,7 +80,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.lizhigang.common.mybatis.bean.User" >
+  <update id="updateByPrimaryKeySelective" parameterType="com.lizhigang.bean.user.User" >
     update sys_user
     <set >
       <if test="userName != null" >
@@ -104,7 +104,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.lizhigang.common.mybatis.bean.User" >
+  <update id="updateByPrimaryKey" parameterType="com.lizhigang.bean.user.User" >
     update sys_user
     set user_name = #{userName,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},
@@ -115,7 +115,12 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-  <select id="getByUserName" parameterType="java.lang.String" resultMap="BaseResultMap">
-    select * from sys_user where user_name = #{userName}
+  <select id="getByCriteriaMapper" parameterType="com.lizhigang.common.Criteria" resultMap="BaseResultMap">
+    select * from sys_user
+    <where>
+      <if test="condition.userName != null">
+        and user_name = #{condition.userName}
+      </if>
+    </where>
   </select>
 </mapper>

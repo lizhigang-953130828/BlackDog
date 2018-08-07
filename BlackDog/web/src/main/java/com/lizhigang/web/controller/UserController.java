@@ -1,7 +1,7 @@
 package com.lizhigang.web.controller;
 
+import com.lizhigang.api.BaseInjection;
 import com.lizhigang.bean.user.User;
-import com.lizhigang.bean.user.UserJurisdiction;
 import com.lizhigang.common.base.BaseController;
 import com.lizhigang.common.utils.ResultUtil;
 import org.apache.shiro.SecurityUtils;
@@ -15,8 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @Controller
 @RequestMapping("/user")
-public class UserController implements BaseController<UserController> {
-
+public class UserController extends BaseInjection implements BaseController<UserController> {
 
     /**
      * 用户登陆

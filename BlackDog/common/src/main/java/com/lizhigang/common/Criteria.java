@@ -29,7 +29,6 @@ public class Criteria implements Serializable {
     private List<String> conditionList; 
 
 
-
     protected Criteria(Criteria example) {
         this.condition = example.condition;
     }
@@ -45,19 +44,16 @@ public class Criteria implements Serializable {
     }
 
     /**
-     * @param condition 
-	 *            查询的条件名称
-	 * @param value
-	 *            查询的值
+     * @param key 查询的条件名称
+	 * @param value 查询的值
      */
-    public Criteria put(String condition, Object value) {
-        this.condition.put(condition, value);
+    public Criteria put(String key, Object value) {
+        this.condition.put(key, value);
         return (Criteria) this;
     }
 
-    public Criteria putConditionList(List<String> conditionList) {
-        this.conditionList = conditionList;
-        return (Criteria) this;
+    public Map<String, Object> getCondition() {
+        return condition;
     }
 	
 	public void removeCondition(String key){

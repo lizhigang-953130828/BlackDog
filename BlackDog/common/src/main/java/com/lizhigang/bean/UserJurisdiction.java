@@ -1,6 +1,6 @@
-package com.lizhigang.common.mybatis.bean;
+package com.lizhigang.bean;
 
-public class User {
+public class UserJurisdiction {
     private Integer id;
 
     private String userName;
