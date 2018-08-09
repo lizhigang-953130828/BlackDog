@@ -1,6 +1,8 @@
 package com.lizhigang.common.base;
 
 
+import com.lizhigang.common.utils.ResultUtil;
+
 import javax.servlet.http.HttpServletRequest;
 
 /**
@@ -10,19 +12,14 @@ import javax.servlet.http.HttpServletRequest;
  */
 public interface BaseController<T> {
 
-    /**
-     * 跳转-添加
-     * @return
-     */
-    String onAdd();
 
     /**
      * 执行-添加
      * @param request
-     * @param object
+     * @param t
      * @return
      */
-    String doAdd(HttpServletRequest request, T object);
+    ResultUtil doAdd(HttpServletRequest request, T t);
 
     /**
      * 跳转-修改
@@ -34,17 +31,17 @@ public interface BaseController<T> {
     /**
      * 执行-修改
      * @param request
-     * @param object
+     * @param t
      * @return
      */
-    String doUpdata(HttpServletRequest request, T object);
+    ResultUtil doUpdata(HttpServletRequest request, T t);
 
     /**
      * 执行-删除
      * @param request
      * @return
      */
-    String doDelete(HttpServletRequest request);
+    ResultUtil doDelete(HttpServletRequest request);
 
     /**
      * 执行-查询

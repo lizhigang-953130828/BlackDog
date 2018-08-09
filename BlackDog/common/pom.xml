@@ -6,6 +6,7 @@
     <groupId>com.lizhigang.blackdog</groupId>
     <artifactId>common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+
     <packaging>jar</packaging>
 
     <name>common</name>
@@ -17,6 +18,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <dependencies>
+
+    </dependencies>
 
     <build>
         <plugins>

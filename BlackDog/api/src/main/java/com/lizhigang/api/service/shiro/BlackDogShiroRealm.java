@@ -8,6 +8,7 @@ import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
+import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -35,9 +36,9 @@ public class BlackDogShiroRealm extends AuthorizingRealm {
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
         // 获取用户
         User user = (User)SecurityUtils.getSubject().getPrincipal();
-        SimpleAuthorizationInfo info =  new SimpleAuthorizationInfo();
-        //获取用户角色
-        String jurisdiction = jurisdictionMapper.getByCriteriaMapper(new Criteria().put("id",user.getJurisdictionIdw())).getJurisdictionname();
+        SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
+        // 获取用户角色
+        String jurisdiction = jurisdictionMapper.getByCriteriaMapper(new Criteria().put("id", user.getJurisdictionIdw())).getJurisdictionname();
         Set<String> players = new HashSet(Arrays.asList(jurisdiction.split(",")));
         Set<String> permissionSet = new HashSet();
         players.forEach((player) -> permissionSet.add(player));
@@ -55,8 +56,11 @@ public class BlackDogShiroRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authenticationToken) throws AuthenticationException {
         UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;
         User user = (User) userMapper.getByCriteriaMapper(new Criteria().put("userName",token.getUsername()));
+        if (user==null) {
+            throw new UnknownAccountException();
+        }
         //密码进行加密处理
-        //String encryptionPwd = new SimpleHash("MD5", user.getPassword(), "2016", 1).toString();      // 加密方式、需加密值、盐值、加密次数
+        //String encryptionPwd = new SimpleHash("MD5", user.getPassword(), "20160224", 1).toString();      // 加密方式、需加密值、盐值、加密次数
         return new SimpleAuthenticationInfo(user, user.getPassword(), getName());
     }
 }

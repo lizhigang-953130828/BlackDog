@@ -42,14 +42,21 @@ public class ResultUtil extends HashMap<String, Object> {
     /**
      * 错误返回
      */
-    public static ResultUtil resultUtilError(String message){
+    public static ResultUtil resultUtilFail(String message){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put("code", 500);
         resultUtil.put("message",message);
         return resultUtil;
     }
 
-    public static ResultUtil resultUtilError(){
+    public static ResultUtil resultUtilFail(String code, String message){
+        ResultUtil resultUtil = new ResultUtil();
+        resultUtil.put("code", code);
+        resultUtil.put("message",message);
+        return resultUtil;
+    }
+
+    public static ResultUtil resultUtilFail(){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put("code", 500);
         resultUtil.put("message","未知错误！请稍后再试");

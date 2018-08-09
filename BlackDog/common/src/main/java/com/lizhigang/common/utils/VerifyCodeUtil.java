@@ -67,7 +67,6 @@ public class VerifyCodeUtil {
         for (int i = 1; i <= stringNum; i++) {
             randomString = drowString(g, randomString, i);
         }
-        logger.info(randomString);
         //将生成的随机字符串保存到session中
         session.removeAttribute(RANDOMCODEKEY);
         session.setAttribute(RANDOMCODEKEY, randomString);

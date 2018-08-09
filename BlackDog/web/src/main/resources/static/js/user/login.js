@@ -1,13 +1,9 @@
-//验证码初始化
-document.getElementById("imgVerify").src="http://localhost:8081/getVerify";
-//获取验证码
-function getVerify(obj){
-    obj.src = "http://localhost:8081/getVerify?"+Math.random();
+// 刷新验证码
+function changeVerify(){
+    document.getElementById("verify").src="/getVerify.do?"+Math.random();
 }
 
 $(function(){
-
-
 	var tab = 'account_number';
 	// 选项卡切换
 	$(".account_number").click(function () {
@@ -41,10 +37,10 @@ $(function(){
 		checkBtn();
 	});
 
-    $('#veri').keyup(function(event) {
-        $('.tel-warn').addClass('hide');
-        checkBtn();
-    });
+	$('#veri').keyup(function(event) {
+		$('.tel-warn').addClass('hide');
+		checkBtn();
+	});
 
 	$('#num2').keyup(function(event) {
 		$('.tel-warn').addClass('hide');
@@ -63,9 +59,19 @@ $(function(){
 		if (tab == 'account_number') {
 			var inp = $.trim($('#num').val());
 			var pass = $.trim($('#pass').val());
-            var veri = $.trim($('#veri').val());
-			if (inp != '' && pass != '' && veri!='') {
-                sendBtn();
+			if (inp != '' && pass != '') {
+				if (!$('.code').hasClass('hide')) {
+					code = $.trim($('#veri').val());
+					if (code == '') {
+						$(".log-btn").addClass("off");
+					} else {
+						$(".log-btn").removeClass("off");
+						sendBtn();
+					}
+				} else {
+					$(".log-btn").removeClass("off");
+						sendBtn();
+				}
 			} else {
 				$(".log-btn").addClass("off");
 			}
@@ -103,10 +109,10 @@ $(function(){
 
 	function checkCode(code){
 		if (code == '') {
-			 $('.tel-warn').removeClass('hide').text('请输入验证码');
+			$('.tel-warn').removeClass('hide').text('请输入验证码');
 			return false;
 		} else {
-			 $('.tel-warn').addClass('hide');
+			$('.tel-warn').addClass('hide');
 			return true;
 		}
 	}
@@ -160,59 +166,44 @@ $(function(){
 		}
 	}
 
-
-
 	// 登录点击事件
 	function sendBtn(){
 		if (tab == 'account_number') {
 			$(".log-btn").click(function(){
-				var userName = $.trim($('#num').val());
-				var password = $.trim($('#pass').val());
-                var veri = $.trim($('#veri').val());
-				if (checkAccount(userName) && checkPass(password) && checkCode(veri)) {
-
+				var inp = $.trim($('#num').val());
+				var pass = $.trim($('#pass').val());
+				var verify="";
+				if (checkAccount(inp) && checkPass(pass)) {
+					if (!$('.code').hasClass('hide')) {
+                        var code = $.trim($('#veri').val());
+                        if (!checkCode(code)) {
+                            return false;
+                        }
+                        verify = code.toLocaleUpperCase();
+                    }
 					$.ajax({
 			            url: '/user/doLogin.do',
 			            type: 'post',
 			            dataType: 'json',
-			           // async: true,
-			            data: {userName:userName, password:password, veri:veri},
-						success:function () {
-							alert("请求成功！")
-                        },
-						error:function () {
-							alert("请求失败！")
-                        }
-			            /*success:function(){
-			            	alert("请求成功！！！");
-			                /!*if (data.code == '0') {
-			                    // globalTip({'msg':'登录成功!','setTime':3,'jump':true,'URL':'http://www.ui.cn'});
-			                    globalTip(data.msg);
-			                } else if(data.code == '2') {
-			                	$(".log-btn").off('click').addClass("off");
-			                    $('.pass-err').removeClass('hide').find('em').text(data.msg);
-			                    $('.pass-err').find('i').attr('class', 'icon-warn').css("color","#d9585b");
-			                    $('.code').removeClass('hide');
-			                    $('.code').find('img').attr('src','/verifyCode?'+Math.random()).click(function(event) {
-			                    	$(this).attr('src', '/verifyCode?'+Math.random());
-			                    });;
-			                    return false;
-			                } else if(data.code == '3') {
-			                	$(".log-btn").off('click').addClass("off");
-			                    $('.img-err').removeClass('hide').find('em').text(data.msg);
-			                    $('.img-err').find('i').attr('class', 'icon-warn').css("color","#d9585b");
-			                    $('.code').removeClass('hide');
-			                    $('.code').find('img').attr('src','/verifyCode?'+Math.random()).click(function(event) {
-			                    	$(this).attr('src', '/verifyCode?'+Math.random());
-			                    });
-			                    return false;
-			                } else if(data.code == '1'){
-			                	$(".log-btn").off('click').addClass("off");
-			                	$('.num-err').removeClass('hide').find('em').text(data.msg);
-			                	$('.num-err').find('i').attr('class', 'icon-warn').css("color","#d9585b");
-			                	return false;
-			                }*!/
-			            },*/
+			            async: true,
+			            data: {userName:inp,password:pass,verify:verify},
+			            success:function(data){
+			            	if(data.code==200) {
+			            		alert("登陆成功");
+							} else if(data.code==400) {
+                                $('.img-err').removeClass('hide');
+                                changeVerify();
+							} else if(data.code==401) {
+                                alert(data.message);
+                                $('.pass-err , .num-err').removeClass('hide');
+							} else {
+			            		alert("BlackDog系统发生异常，请稍后再试！");
+							}
+                            changeVerify();
+			            },
+			            error:function(){
+                            alert("BlackDog系统发生异常，请稍后再试！");
+			            }
 			        });
 				} else {
 					return false;
@@ -304,5 +295,7 @@ $(function(){
 	        },1000);
 		}
     });
+
+
 
 });

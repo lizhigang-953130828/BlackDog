@@ -11,17 +11,17 @@ import org.springframework.stereotype.Service;
 public class UserServiceImpl extends BaseInjection implements UserService {
 
     @Override
-    public int insert(Object obj) {
+    public Integer insert(Object obj) {
         return 0;
     }
 
     @Override
-    public int updateById(Object obj) {
+    public Integer updateById(Object obj) {
         return 0;
     }
 
     @Override
-    public int deleteById(Integer id) {
+    public Integer deleteById(Integer id) {
         return 0;
     }
 

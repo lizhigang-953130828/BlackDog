@@ -16,7 +16,7 @@ public class BlackdogApplication {
         SpringApplication.run(BlackdogApplication.class, args);
     }
 
-    @RequestMapping("/getVerify")
+    @RequestMapping("/getVerify.do")
     public void verifyCode(HttpServletRequest request, HttpServletResponse response){
         // 设置相应类型,告诉浏览器输出的内容为图片
         response.setContentType("image/jpeg");

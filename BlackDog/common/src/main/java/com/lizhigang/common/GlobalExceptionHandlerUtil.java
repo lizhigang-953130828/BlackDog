@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 public class GlobalExceptionHandlerUtil {
+
     @ExceptionHandler(Exception.class)
     public String defaultExceptionHandler(HttpServletRequest req, Exception e) {
         return "error/500";
