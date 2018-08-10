@@ -56,8 +56,8 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="80" column="9" selection-start-line="65" selection-start-column="64" selection-end-line="80" selection-end-column="9" />
+            <state relative-caret-position="460">
+              <caret line="101" column="59" selection-start-line="101" selection-start-column="59" selection-end-line="101" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4550#4551#0" expanded="true" />
@@ -88,8 +88,8 @@
       <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="91" column="46" lean-forward="true" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+            <state relative-caret-position="-552">
+              <caret line="83" column="17" lean-forward="true" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -99,6 +99,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SmsApi.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/aliyun/SmsApi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,8 +217,8 @@
         <option value="$PROJECT_DIR$/web/src/main/resources/static/js/user/login.js" />
         <option value="$PROJECT_DIR$/web/src/main/resources/static/login.html" />
         <option value="$PROJECT_DIR$/web/src/main/resources/static/register.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/user/register.js" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/base/BaseController.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/user/register.js" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java" />
@@ -483,12 +495,12 @@
       <workItem from="1533708816154" duration="9246000" />
       <workItem from="1533780512292" duration="11775000" />
       <workItem from="1533802440260" duration="17117000" />
-      <workItem from="1533875278910" duration="13770000" />
+      <workItem from="1533875278910" duration="14543000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147354000" />
+    <option name="totallyTimeSpent" value="148127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -509,7 +521,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="10" weight="0.17697228" />
+      <window_info active="true" anchor="right" id="Database" order="10" visible="true" weight="0.17697228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -523,7 +535,7 @@
       <window_info anchor="right" id="Version Control" order="9" weight="0.20682302" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.25431034" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" x="6" y="6" width="1908" height="1038" id="Terminal" order="7" visible="true" weight="0.25215518" />
+      <window_info anchor="bottom" x="6" y="6" width="1908" height="1038" id="Terminal" order="7" visible="true" weight="0.25215518" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
       <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info id="Web" order="6" side_tool="true" />
@@ -773,13 +785,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://d5742478-6b71-4147-adb4-78d7d52f9666/schema/blackdog/table/sys_user">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d5742478-6b71-4147-adb4-78d7d52f9666/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -811,6 +816,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -825,16 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="47" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/aliyun/SmsApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1403">
-          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,6 +867,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://d5742478-6b71-4147-adb4-78d7d52f9666/schema/blackdog/table/sys_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -876,10 +881,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/aliyun/SmsApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="73" column="9" selection-start-line="73" selection-start-column="9" selection-end-line="73" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="91" column="46" lean-forward="true" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+        <state relative-caret-position="-552">
+          <caret line="83" column="17" lean-forward="true" selection-start-line="83" selection-start-column="17" selection-end-line="83" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -895,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="80" column="9" selection-start-line="65" selection-start-column="64" selection-end-line="80" selection-end-column="9" />
+        <state relative-caret-position="460">
+          <caret line="101" column="59" selection-start-line="101" selection-start-column="59" selection-end-line="101" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4550#4551#0" expanded="true" />

@@ -2,6 +2,7 @@ package com.lizhigang.web.controller;
 
 import com.aliyuncs.exceptions.ClientException;
 import com.lizhigang.api.BaseInjection;
+import com.lizhigang.api.aliyun.SmsApi;
 import com.lizhigang.bean.user.User;
 import com.lizhigang.common.base.BaseController;
 import com.lizhigang.common.utils.ParamUtil;
@@ -66,7 +67,7 @@ public class UserController extends BaseInjection implements BaseController<User
         if (ParamUtil.isEmpty(tel,password,password2,veriCode)) {
             try {
                 String sessionCode = request.getSession().getAttribute(tel).toString();
-                if (sessionCode.equals("123456")) {
+                if (sessionCode.equals(veriCode)) {
                     if (password.equals(password2)) {
                         user.setTel(tel);
                         user.setPassword(new SimpleHash("MD5", "20160224", password).toHex());
@@ -93,14 +94,12 @@ public class UserController extends BaseInjection implements BaseController<User
     public ResultUtil sendSms(HttpServletRequest request) throws ClientException {
         String tel = request.getParameter("tel");
         if (ParamUtil.isEmpty(tel)) {
-            //String code = SmsApi.sendSms(tel);
-            /*if (code.equals("403") || code.equals("400")) {
-                request.getSession().setAttribute(tel,code);
-                return ResultUtil.resultUtilSuccess("success");
-            }*/
-            request.getSession().setAttribute(tel,"123456");
+            String code = SmsApi.sendSms(tel);
+            if (code.equals("403") || code.equals("400")) {
+                return ResultUtil.resultUtilFail("403","发送验证码发生异常！请联系管理员QQ：953130828");
+            }
+            request.getSession().setAttribute(tel,code);
             return ResultUtil.resultUtilSuccess("success");
-            //return ResultUtil.resultUtilFail("403","发送验证码发生异常！请联系管理员QQ：953130828");
         }
         return ResultUtil.resultUtilFail("400","非法参数！");
     }
