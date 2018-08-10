@@ -131,11 +131,11 @@ $(function(){
 			return false;
 		}
 		$.ajax({
-            url: '/checkPhone',
+            url: '/user/sendSms.do',
             type: 'post',
             dataType: 'json',
             async: false,
-            data: {phone:phone,type:"login"},
+            data: {phone:phone},
             success:function(data){
                 if (data.code == '0') {
                     $('.num2-err').addClass('hide');
@@ -190,10 +190,10 @@ $(function(){
 			            success:function(data){
 			            	if(data.code==200) {
 			            		alert("登陆成功");
-							} else if(data.code==400) {
+							} else if(data.code==4001) {
                                 $('.img-err').removeClass('hide');
                                 changeVerify();
-							} else if(data.code==401) {
+							} else if(data.code==4011) {
                                 alert(data.message);
                                 $('.pass-err , .num-err').removeClass('hide');
 							} else {

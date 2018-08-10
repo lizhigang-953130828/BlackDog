@@ -7,7 +7,7 @@ public class ParamUtil {
     /**
      * 判断传入值是否为空
      * @param param
-     * @return true/false
+     * @return 为空则返回false
      */
     public static boolean isEmpty(String... param){
         boolean falg = true;

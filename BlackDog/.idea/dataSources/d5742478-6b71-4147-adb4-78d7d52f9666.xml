@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="blackdog@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.9">
+    <root id="1">
+      <ServerVersion>5.0.87</ServerVersion>
+      <DefaultCasing>lower/lower</DefaultCasing>
+    </root>
+    <schema id="2" parent="1" name="blackdog">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="huaweicalculate"/>
+    <schema id="4" parent="1" name="huaweisetup"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="mysql"/>
+    <schema id="7" parent="1" name="overseascalcu"/>
+    <schema id="8" parent="1" name="overseassetup"/>
+    <schema id="9" parent="1" name="qussbgcalcu"/>
+    <schema id="10" parent="1" name="qussbgsetup"/>
+    <schema id="11" parent="1" name="sdkcalculate"/>
+    <schema id="12" parent="1" name="sdksetup"/>
+    <schema id="13" parent="1" name="wycalcu"/>
+    <schema id="14" parent="1" name="wysetup"/>
+    <table id="15" parent="2" name="sys_jurisdiction"/>
+    <table id="16" parent="2" name="sys_user"/>
+    <column id="17" parent="15" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="15" name="JurisdictionName">
+      <Position>2</Position>
+      <Comment>权限名称</Comment>
+      <DataType>VARCHAR(500)|12s</DataType>
+    </column>
+    <index id="19" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="20" parent="15" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="21" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>INT(10)|4s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="22" parent="16" name="user_name">
+      <Position>2</Position>
+      <Comment>用户名</Comment>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="23" parent="16" name="password">
+      <Position>3</Position>
+      <Comment>密码</Comment>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="24" parent="16" name="tel">
+      <Position>4</Position>
+      <Comment>手机号码</Comment>
+      <DataType>VARCHAR(11)|12s</DataType>
+    </column>
+    <column id="25" parent="16" name="individual_signature">
+      <Position>5</Position>
+      <Comment>个性签名</Comment>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="26" parent="16" name="professiona_tag">
+      <Position>6</Position>
+      <Comment>职业标签</Comment>
+      <DataType>VARCHAR(200)|12s</DataType>
+    </column>
+    <column id="27" parent="16" name="jurisdiction_idw">
+      <Position>7</Position>
+      <Comment>权限Id外键</Comment>
+      <DataType>INT(10)|4s</DataType>
+    </column>
+    <index id="28" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="29" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

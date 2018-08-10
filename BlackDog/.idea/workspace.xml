@@ -18,22 +18,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="blackdog@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="blackdog@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="blackdog: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="24" column="49" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/login.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="201" column="43" selection-start-line="201" selection-start-column="43" selection-end-line="201" selection-end-column="43" />
+            <state relative-caret-position="99">
+              <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -41,28 +56,19 @@
       <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+            <state relative-caret-position="414">
+              <caret line="80" column="9" selection-start-line="65" selection-start-column="64" selection-end-line="80" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3244#3245#0" expanded="true" />
-                <element signature="e#3331#3332#0" expanded="true" />
-                <element signature="e#3358#3359#0" expanded="true" />
-                <element signature="e#3434#3435#0" expanded="true" />
-                <element signature="e#3461#3462#0" expanded="true" />
-                <element signature="e#3533#3534#0" expanded="true" />
-                <element signature="e#3560#3561#0" expanded="true" />
+                <element signature="e#4550#4551#0" expanded="true" />
+                <element signature="e#4577#4578#0" expanded="true" />
+                <element signature="e#4664#4665#0" expanded="true" />
+                <element signature="e#4691#4692#0" expanded="true" />
+                <element signature="e#4767#4768#0" expanded="true" />
+                <element signature="e#4794#4795#0" expanded="true" />
+                <element signature="e#4866#4867#0" expanded="true" />
+                <element signature="e#4893#4894#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test_1.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/src/test/java/com/lizhigang/test/Test_1.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -70,11 +76,29 @@
       <file leaf-file-name="BaseController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/base/BaseController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+            <state relative-caret-position="345">
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/register.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="91" column="46" lean-forward="true" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -92,11 +116,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>\&lt;\?xml version\=\&quot;1\.0\&quot; encoding\=\&quot;UTF\-8\&quot;\?\&gt;\n\&lt;\!DOCTYPE generatorConfiguration PUBLIC \&quot;\-\/\/mybatis\.org\/\/DTD MyBatis Generator Configuration 1\.0\/\/EN\&quot; \&quot;http\:\/\/mybatis\.org\/dtd\/mybatis\-generator\-config_1_0\.dtd\&quot;\&gt;\n\&lt;generatorConfiguration\&gt;\n\&lt;\!\-\- 数据库驱动包位置 \-\-\&gt;\n\&lt;classPathEntry\nlocation\=\&quot;E\:\\apache\-maven\-3\.3\.9\\repo\\mysql\\mysql\-connector\-java\\5\.1\.18\\mysql\-connector\-java\-5\.1\.18\.jar\&quot; \/\&gt;  \n\&lt;context id\=\&quot;Tables\&quot; targetRuntime\=\&quot;MyBatis3\&quot;\&gt;\n\&lt;commentGenerator\&gt;\n\&lt;\!\-\- 是否去除自动生成的注释 true\：是 \： false\:否 \-\-\&gt;\n\&lt;property name\=\&quot;suppressAllComments\&quot; value\=\&quot;true\&quot; \/\&gt;\n\&lt;\/commentGenerator\&gt;\n\&lt;\!\-\- 数据库链接URL\、用户名\、密码 \-\-\&gt;\n\&lt;jdbcConnection driverClass\=\&quot;com\.mysql\.jdbc\.Driver\&quot;\nconnectionURL\=\&quot;jdbc\:mysql\:\/\/192\.168\.100\.52\:3306\/dev_test\&quot; userId\=\&quot;数据库用户名\&quot;\npassword\=\&quot;数据库密码\&quot;\&gt;\n\&lt;\!\-\-\&lt;jdbcConnection driverClass\=\&quot;oracle\.jdbc\.driver\.OracleDriver\&quot; connectionURL\=\&quot;jdbc\:oracle\:thin\:\@localhost\:1521\:orcl\&quot; \nuserId\=\&quot;msa\&quot; password\=\&quot;msa\&quot;\&gt; \-\-\&gt;\n\&lt;\/jdbcConnection\&gt;\n\&lt;javaTypeResolver\&gt;\n\&lt;\!\-\- 默认false\，把JDBC DECIMAL 和 NUMERIC 类型解析为 Integer\， 为 true时把JDBC DECIMAL和NUMERIC类型解析为java\.math\.BigDecimal \-\-\&gt;\n\&lt;property name\=\&quot;forceBigDecimals\&quot; value\=\&quot;true\&quot; \/\&gt;\n\&lt;\/javaTypeResolver\&gt;\n\&lt;\!\-\- 生成实体类的包名和位置\，这里配置将生成的实体类放在com\.loan\.test\.entity这个包下 \-\-\&gt;\n\&lt;javaModelGenerator targetPackage\=\&quot;com\.loan\.test\.entity\&quot;\ntargetProject\=\&quot;\.\\src\\main\\java\\\&quot;\&gt;\n\&lt;\!\-\- enableSubPackages\:是否让schema作为包的后缀 \-\-\&gt;\n\&lt;property name\=\&quot;enableSubPackages\&quot; value\=\&quot;true\&quot; \/\&gt;\n\&lt;\!\-\- 从数据库返回的值被清理前后的空格 \-\-\&gt;\n\&lt;property name\=\&quot;trimStrings\&quot; value\=\&quot;true\&quot; \/\&gt;\n\&lt;\/javaModelGenerator\&gt;\n\&lt;\!\-\- 生成的SQL映射文件包名和位置\，这里配置将生成的SQL映射文件放在com\.loan\.test\.dao\.xml这个包下 \-\-\&gt;\n\&lt;sqlMapGenerator targetPackage\=\&quot;com\.loan\.test\.dao\.xml\&quot;\ntargetProject\=\&quot;\.\\src\\main\\java\\\&quot;\&gt;\n\&lt;\!\-\- enableSubPackages\:是否让schema作为包的后缀 \-\-\&gt;\n\&lt;property name\=\&quot;enableSubPackages\&quot; value\=\&quot;true\&quot; \/\&gt;\n\&lt;\/sqlMapGenerator\&gt;\n\&lt;\!\-\- 生成DAO的包名和位置\，这里配置将生成的dao类放在com\.loan\.test\.dao\.mapper这个包下 \-\-\&gt;\n\&lt;javaClientGenerator type\=\&quot;XMLMAPPER\&quot;\ntargetPackage\=\&quot;com\.loan\.test\.dao\.mapper\&quot; targetProject\=\&quot;\.\\src\\main\\java\\\&quot;\&gt;\n\&lt;\!\-\- enableSubPackages\:是否让schema作为包的后缀 \-\-\&gt;\n\&lt;property name\=\&quot;enableSubPackages\&quot; value\=\&quot;true\&quot; \/\&gt;\n\&lt;\/javaClientGenerator\&gt;\n\&lt;\!\-\- 要生成那些表\(更改tableName和domainObjectName就可以\) \-\-\&gt;\n\&lt;table tableName\=\&quot;test\&quot; domainObjectName\=\&quot;Test\&quot;\nenableCountByExample\=\&quot;false\&quot; enableUpdateByExample\=\&quot;false\&quot;\nenableDeleteByExample\=\&quot;false\&quot; enableSelectByExample\=\&quot;false\&quot;\nselectByExampleQueryId\=\&quot;false\&quot; \/\&gt;\n\&lt;\/context\&gt;\n\&lt;\/generatorConfiguration\&gt;\n</find>
-      <find>doGetAuthorizationInfo</find>
-      <find>MyBatis3</find>
-      <find>targetProject</find>
-      <find>com.lizhigang.api.dao.UserMapper</find>
       <find>com.lizhigang.bean.UserJurisdiction</find>
       <find>http</find>
       <find>updateByPrimaryKeySelective</find>
@@ -109,10 +128,24 @@
       <find>password</find>
       <find>RANDOMCODEKEY</find>
       <find>img-err</find>
-      <find>tel-warn</find>
       <find>tel-warn img-err</find>
       <find>doGetAuthenticationInfo</find>
       <find>bizId</find>
+      <find>QuerySendDetailsResponse</find>
+      <find>DATE_A</find>
+      <find>pass</find>
+      <find>num2</find>
+      <find>veri-code</find>
+      <find>tel-warn</find>
+      <find>checkPhone</find>
+      <find>checkAccount</find>
+      <find>log-btn</find>
+      <find>num2-err</find>
+      <find>reg-btn</find>
+      <find>num-err</find>
+      <find>sendBtn</find>
+      <find>checkBtn</find>
+      <find>veriCode</find>
     </findStrings>
     <replaceStrings>
       <replace>com.lizhigang.bean.user.UserJurisdiction</replace>
@@ -126,14 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/dao/UserJurisdictionMapper.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/service/UserJurisdictionMapper.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/dao/JurisdictionMapper.java" />
-        <option value="$PROJECT_DIR$/web/src/test/java/com/lizhigang/WebApplicationTests.java" />
-        <option value="$PROJECT_DIR$/bean/pom.xml" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
-        <option value="$PROJECT_DIR$/api/pom.xml" />
-        <option value="$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/BaseInjection.java" />
         <option value="$PROJECT_DIR$/api/pom.xml" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/service/UserService.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/service/impl/UserServiceImpl.java" />
@@ -155,24 +180,32 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/base/BaseService.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/service/user/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/BlackdogApplication.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/static/register.html" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/VerifyCodeUtil.java" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/common/pom.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/RequestUtil.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/GlobalExceptionHandlerUtil.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/ResultUtil.java" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/static/login.html" />
-        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/user/login.js" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/alisms/SmsDemo.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/alisms/SmsApi.java" />
-        <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/aliyun/SmsApi.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/ParamUtil.java" />
-        <option value="$PROJECT_DIR$/web/src/test/java/com/lizhigang/test/Test_1.java" />
         <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/service/shiro/BlackDogShiroRealm.java" />
+        <option value="d5742478-6b71-4147-adb4-78d7d52f9666/schema/blackdog/table/sys_user.sql" />
+        <option value="$PROJECT_DIR$/web/src/test/java/com/lizhigang/test/Test_1.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/log/LogUtil.java" />
+        <option value="$PROJECT_DIR$/log/1533870787479.txt" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/DateUtil.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/LogUtil.java" />
+        <option value="$PROJECT_DIR$/log/2018-08-10.txt" />
+        <option value="$PROJECT_DIR$/bean/src/main/java/com/lizhigang/bean/Constants.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/ParamUtil.java" />
+        <option value="$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/aliyun/SmsApi.java" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/user/login.js" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/static/login.html" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/static/register.html" />
+        <option value="$PROJECT_DIR$/web/src/main/resources/static/js/user/register.js" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/base/BaseController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java" />
         <option value="$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java" />
@@ -222,8 +255,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,75 +268,13 @@
             <path>
               <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
               <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lizhigang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lizhigang" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lizhigang" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
               <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
@@ -334,65 +306,10 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lizhigang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BlackDog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BlackDog" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="lizhigang" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -403,6 +320,8 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/elvinle-bookshop-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -433,11 +352,11 @@
       <recent name="com.lizhigang.api.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Blackdog\BlackDog\common\src\main\java\com\lizhigang\common\utils" />
+      <recent name="E:\Blackdog\BlackDog\common\src\main\java\com\lizhigang\common\log" />
       <recent name="E:\Blackdog\BlackDog\api\src\main\java\com\lizhigang\api\alisms" />
       <recent name="E:\Blackdog\BlackDog\web\src\main\resources\static\js\user" />
       <recent name="E:\Blackdog\BlackDog\web\src\main\java\com\lizhigang\web\filter" />
-      <recent name="E:\BlackDog\api\src\main\resources" />
-      <recent name="E:\BlackDog\common\src\main\java\com\lizhigang\common" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -452,29 +371,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test_1">
-    <configuration name="ParamUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lizhigang.common.utils.ParamUtil" />
-      <module name="Common" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lizhigang.common.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Test_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.lizhigang.test.Test_1" />
-      <module name="Web" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.lizhigang.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.BlackDog">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -549,15 +446,7 @@
     <list>
       <item itemvalue="Maven.mybatis-generator" />
       <item itemvalue="Spring Boot.BlackDog" />
-      <item itemvalue="Application.Test_1" />
-      <item itemvalue="Application.ParamUtil" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Test_1" />
-        <item itemvalue="Application.ParamUtil" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration useDefault="false">C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
@@ -593,127 +482,100 @@
       <workItem from="1533611758175" duration="7244000" />
       <workItem from="1533708816154" duration="9246000" />
       <workItem from="1533780512292" duration="11775000" />
-      <workItem from="1533802440260" duration="5445000" />
+      <workItem from="1533802440260" duration="17117000" />
+      <workItem from="1533875278910" duration="13770000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121912000" />
+    <option name="totallyTimeSpent" value="147354000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.50053304" side_tool="true" weight="0.22306034" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32995737" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.22306034" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="10" weight="0.17697228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2974138" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.18965517" />
-      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.18965517" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3297414" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.27047414" />
+      <window_info anchor="right" id="Version Control" order="9" weight="0.20682302" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.25431034" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3297414" />
-      <window_info anchor="bottom" x="6" y="6" width="1908" height="1038" id="Terminal" order="7" weight="0.25215518" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21481876" />
-      <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info active="true" anchor="bottom" x="6" y="6" width="1908" height="1038" id="Terminal" order="7" visible="true" weight="0.25215518" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14925373" />
+      <window_info anchor="right" id="Bean Validation" order="7" />
       <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.3275862" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="49" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/mybatis/mapper/UserMapper.java" />
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/dao/user/JurisdictionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/api/dao/bean/UserJurisdiction.java" />
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/bean/UserJurisdiction.java" />
-    <entry file="file://$PROJECT_DIR$/web/src/test/java/com/lizhigang/WebApplicationTests.java" />
-    <entry file="file://$PROJECT_DIR$/api/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="34" column="21" selection-start-line="30" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bean/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/BaseInjection.java" />
-    <entry file="file://$PROJECT_DIR$/api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/api/dao/UserJurisdictionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/Criteria.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/api/dao/UserJurisdictionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="64" column="41" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/dao/user/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -768,9 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="389">
           <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -858,13 +714,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/filter/MybatisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-111">
@@ -876,13 +725,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="100" column="24" lean-forward="true" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -907,20 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/aliyun/SmsApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/ParamUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -928,41 +756,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="24" column="49" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/service/shiro/BlackDogShiroRealm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="53" column="7" lean-forward="true" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9916d3e7-a7da-4cf8-b072-806d9c92551a/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://d5742478-6b71-4147-adb4-78d7d52f9666/schema/blackdog/table/sys_user.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://d5742478-6b71-4147-adb4-78d7d52f9666/schema/blackdog/table/sys_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/d5742478-6b71-4147-adb4-78d7d52f9666/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/aliyun/aliyun-java-sdk-dysmsapi/1.1.0/aliyun-java-sdk-dysmsapi-1.1.0.jar!/com/aliyuncs/dysmsapi/model/v20170525/SendSmsResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/log/LogUtil.java" />
+    <entry file="file://$PROJECT_DIR$/web/src/test/java/com/lizhigang/test/Test_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/1533870787479.txt" />
+    <entry file="file://$PROJECT_DIR$/log/1533870817625.txt" />
+    <entry file="file://$PROJECT_DIR$/log/2018-08-10.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="62" selection-start-column="56" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/LogUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="21" column="83" selection-start-line="21" selection-start-column="83" selection-end-line="21" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bean/src/main/java/com/lizhigang/bean/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/src/main/java/com/lizhigang/api/aliyun/SmsApi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1403">
+          <caret line="68" column="22" selection-start-line="68" selection-start-column="22" selection-end-line="68" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/login.js">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/utils/ParamUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="201" column="43" selection-start-line="201" selection-start-column="43" selection-end-line="201" selection-end-column="43" />
+        <state relative-caret-position="207">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/src/test/java/com/lizhigang/test/Test_1.java">
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/agree.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="283">
+          <caret line="56" column="5" lean-forward="true" selection-start-line="56" selection-start-column="5" selection-end-line="57" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="30" column="65" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/src/main/resources/static/js/user/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="91" column="46" lean-forward="true" selection-start-line="91" selection-start-column="46" selection-end-line="91" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/lizhigang/common/base/BaseController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="33" column="15" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
+        <state relative-caret-position="345">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -971,18 +895,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/src/main/java/com/lizhigang/web/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="62" column="25" selection-start-line="62" selection-start-column="25" selection-end-line="62" selection-end-column="25" />
+        <state relative-caret-position="414">
+          <caret line="80" column="9" selection-start-line="65" selection-start-column="64" selection-end-line="80" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3244#3245#0" expanded="true" />
-            <element signature="e#3331#3332#0" expanded="true" />
-            <element signature="e#3358#3359#0" expanded="true" />
-            <element signature="e#3434#3435#0" expanded="true" />
-            <element signature="e#3461#3462#0" expanded="true" />
-            <element signature="e#3533#3534#0" expanded="true" />
-            <element signature="e#3560#3561#0" expanded="true" />
+            <element signature="e#4550#4551#0" expanded="true" />
+            <element signature="e#4577#4578#0" expanded="true" />
+            <element signature="e#4664#4665#0" expanded="true" />
+            <element signature="e#4691#4692#0" expanded="true" />
+            <element signature="e#4767#4768#0" expanded="true" />
+            <element signature="e#4794#4795#0" expanded="true" />
+            <element signature="e#4866#4867#0" expanded="true" />
+            <element signature="e#4893#4894#0" expanded="true" />
           </folding>
         </state>
       </provider>

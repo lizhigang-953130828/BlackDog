@@ -18,26 +18,28 @@
                 <!--<p class="tel-warn hide"><i class="icon-warn"></i></p>-->
                 <form>
                     <p class="p-input pos">
-                        <label for="tel">手机号</label>
-                        <input type="number" id="tel" autocomplete="off">
-                        <span class="tel-warn tel-err hide"><em></em><i class="icon-warn"></i></span>
+                        <label for="num">手机号</label>
+                        <input type="text" id="num">
+                        <span class="tel-warn num2-err hide"><em></em><i class="icon-warn"></i></span>
                     </p>
                     <p class="p-input pos" id="sendcode">
                         <label for="veriCode">输入验证码</label>
                         <input type="number" id="veriCode">
                         <a href="javascript:;" class="send">发送验证码</a>
                         <span class="time hide"><em>120</em>s</span>
-                        <span class="error hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+                        <span class="tel-warn error hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
                     </p>
-                    <p class="p-input pos" id="pwd">
-                        <label for="password">输入密码</label>
-                        <input type="password" id="password">
-                        <span class="tel-warn pwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+                    <p class="p-input pos">
+                        <label for="pass">输入密码</label>
+                        <input type="password" style="display:none"/>
+                        <input type="password" id="pass" autocomplete="new-password">
+                        <span class="tel-warn pwd-err hide"><em></em><i class="icon-warn"></i></span>
                     </p>
-                    <p class="p-input pos" id="confirmpwd">
-                        <label for="password2">确认密码</label>
-                        <input type="password" id="password2">
-                        <span class="tel-warn confirmpwd-err hide"><em></em><i class="icon-warn" style="margin-left: 5px"></i></span>
+                    <p class="p-input pos">
+                        <label for="pass">确认密码</label>
+                        <input type="password" style="display:none"/>
+                        <input type="password" id="pass2" autocomplete="new-password">
+                        <span class="tel-warn pwd-err hide"><em></em><i class="icon-warn"></i></span>
                     </p>
                 </form>
                 <div class="reg_checkboxline pos">
@@ -45,8 +47,9 @@
                     <input type="hidden" name="agree" value="1">
                     <div class="Validform_checktip"></div>
                     <p>我已阅读并接受 <a href="#" target="_brack">《BlackDog协议说明》</a></p>
+                    <span class="tel-warn agree-err hide"><em></em><i class="icon-warn"></i></span>
                 </div>
-                <button class="lang-btn off log-btn">注册</button>
+                <button class="lang-btn off reg-btn">注册</button>
                 <div class="bottom-info">已有账号，<a href="/login.html">马上登录</a></div>
                 <div class="third-party">
                     <a href="#" class="log-qq icon-qq-round"></a>
@@ -57,7 +60,7 @@
         </div>
     </div>
     <script src="/js/jquery-3.3.1.min.js"></script>
-    <script src="/js//user/agree.js"></script>
+    <script src="/js/user/agree.js"></script>
     <script src="/js/user/register.js"></script>
 </div>
 </body>

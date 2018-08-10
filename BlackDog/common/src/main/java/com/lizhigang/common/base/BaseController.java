@@ -19,14 +19,14 @@ public interface BaseController<T> {
      * @param t
      * @return
      */
-    ResultUtil doAdd(HttpServletRequest request, T t);
+    Object doAdd(HttpServletRequest request, T t);
 
     /**
      * 跳转-修改
      * @param request
      * @return
      */
-    String onEdit(HttpServletRequest request);
+    Object onEdit(HttpServletRequest request);
 
     /**
      * 执行-修改
@@ -34,19 +34,19 @@ public interface BaseController<T> {
      * @param t
      * @return
      */
-    ResultUtil doUpdata(HttpServletRequest request, T t);
+    Object doUpdata(HttpServletRequest request, T t);
 
     /**
      * 执行-删除
      * @param request
      * @return
      */
-    ResultUtil doDelete(HttpServletRequest request);
+    Object doDelete(HttpServletRequest request);
 
     /**
      * 执行-查询
      * @param request
      * @return
      */
-    String onSelect(HttpServletRequest request);
+    Object onSelect(HttpServletRequest request);
 }
