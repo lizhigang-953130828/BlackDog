@@ -1,6 +1,12 @@
-package com.lizhigang.bean;
+package com.lizhigang.bean.sys;
 
-public class UserJurisdiction {
+import javax.servlet.http.HttpServletRequest;
+
+/**
+ * 用户表
+ * @author lizhigang
+ */
+public class User {
     private Integer id;
 
     private String userName;
@@ -9,9 +15,11 @@ public class UserJurisdiction {
 
     private String tel;
 
-    private String individualSignature;
+    private String introduce;
 
-    private String professionaTag;
+    private String registerTime;
+
+    private String labelIdw;
 
     private Integer jurisdictionIdw;
 
@@ -28,7 +36,7 @@ public class UserJurisdiction {
     }
 
     public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
+        this.userName = userName;
     }
 
     public String getPassword() {
@@ -36,7 +44,7 @@ public class UserJurisdiction {
     }
 
     public void setPassword(String password) {
-        this.password = password == null ? null : password.trim();
+        this.password = password;
     }
 
     public String getTel() {
@@ -44,23 +52,31 @@ public class UserJurisdiction {
     }
 
     public void setTel(String tel) {
-        this.tel = tel == null ? null : tel.trim();
+        this.tel = tel;
     }
 
-    public String getIndividualSignature() {
-        return individualSignature;
+    public String getIntroduce() {
+        return introduce;
     }
 
-    public void setIndividualSignature(String individualSignature) {
-        this.individualSignature = individualSignature == null ? null : individualSignature.trim();
+    public void setIntroduce(String introduce) {
+        this.introduce = introduce;
     }
 
-    public String getProfessionaTag() {
-        return professionaTag;
+    public String getRegisterTime() {
+        return registerTime;
     }
 
-    public void setProfessionaTag(String professionaTag) {
-        this.professionaTag = professionaTag == null ? null : professionaTag.trim();
+    public void setRegisterTime(String registerTime) {
+        this.registerTime = registerTime;
+    }
+
+    public String getLabelIdw() {
+        return labelIdw;
+    }
+
+    public void setLabelIdw(String labelIdw) {
+        this.labelIdw = labelIdw;
     }
 
     public Integer getJurisdictionIdw() {
@@ -70,4 +86,5 @@ public class UserJurisdiction {
     public void setJurisdictionIdw(Integer jurisdictionIdw) {
         this.jurisdictionIdw = jurisdictionIdw;
     }
+
 }

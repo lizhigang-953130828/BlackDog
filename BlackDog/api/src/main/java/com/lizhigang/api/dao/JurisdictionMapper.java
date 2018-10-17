@@ -1,6 +1,6 @@
-package com.lizhigang.api.dao.user;
+package com.lizhigang.api.dao;
 
-import com.lizhigang.bean.user.Jurisdiction;
+import com.lizhigang.bean.sys.Jurisdiction;
 import com.lizhigang.common.base.BaseMapper;
 
 

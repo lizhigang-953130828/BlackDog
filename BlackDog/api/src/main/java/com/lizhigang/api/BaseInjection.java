@@ -1,7 +1,7 @@
 package com.lizhigang.api;
 
-import com.lizhigang.api.dao.user.UserMapper;
-import com.lizhigang.api.service.user.UserService;
+import com.lizhigang.api.dao.UserMapper;
+import com.lizhigang.api.service.sys.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

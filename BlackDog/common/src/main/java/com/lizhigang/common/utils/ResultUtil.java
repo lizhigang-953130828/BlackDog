@@ -21,19 +21,19 @@ public class ResultUtil extends HashMap<String, Object> {
         put("code", 200);
     }
 
-    public static ResultUtil resultUtilSuccess(String message){
+    public static ResultUtil resultSuccess(String message){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put("message",message);
         return resultUtil;
     }
 
-    public static ResultUtil resultUtilSuccess(List<Object> list){
+    public static ResultUtil resultSuccess(List<Object> list){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put("resultList",list);
         return resultUtil;
     }
 
-    public static ResultUtil resultUtilSuccess(String key, Object value){
+    public static ResultUtil resultSuccess(String key, Object value){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put(key,value);
         return resultUtil;
@@ -42,21 +42,21 @@ public class ResultUtil extends HashMap<String, Object> {
     /**
      * 错误返回
      */
-    public static ResultUtil resultUtilFail(String message){
+    public static ResultUtil resultFail(String message){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put("code", 500);
         resultUtil.put("message",message);
         return resultUtil;
     }
 
-    public static ResultUtil resultUtilFail(String code, String message){
+    public static ResultUtil resultFail(String code, String message){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put("code", code);
         resultUtil.put("message",message);
         return resultUtil;
     }
 
-    public static ResultUtil resultUtilFail(){
+    public static ResultUtil resultFail(){
         ResultUtil resultUtil = new ResultUtil();
         resultUtil.put("code", 500);
         resultUtil.put("message","未知错误！请稍后再试");

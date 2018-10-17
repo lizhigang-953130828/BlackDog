@@ -1,7 +1,7 @@
-package com.lizhigang.api.dao.user;
+package com.lizhigang.api.dao;
 
 
-import com.lizhigang.bean.user.User;
+import com.lizhigang.bean.sys.User;
 import com.lizhigang.common.base.BaseMapper;
 
 /**
@@ -9,5 +9,5 @@ import com.lizhigang.common.base.BaseMapper;
  * @author lizhigang
  */
 public interface UserMapper extends BaseMapper<User> {
-
+    int se
 }

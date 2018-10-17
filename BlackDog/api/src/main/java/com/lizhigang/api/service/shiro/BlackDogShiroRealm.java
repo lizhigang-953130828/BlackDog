@@ -1,14 +1,13 @@
 package com.lizhigang.api.service.shiro;
 
-import com.lizhigang.api.dao.user.JurisdictionMapper;
-import com.lizhigang.api.dao.user.UserMapper;
-import com.lizhigang.bean.user.User;
+import com.lizhigang.api.dao.JurisdictionMapper;
+import com.lizhigang.api.dao.UserMapper;
+import com.lizhigang.bean.sys.User;
 import com.lizhigang.common.Criteria;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
-import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,6 @@
 package com.lizhigang.common.base;
 
 
-import com.lizhigang.common.utils.ResultUtil;
 
 import javax.servlet.http.HttpServletRequest;
 

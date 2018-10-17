@@ -1,5 +1,9 @@
-package com.lizhigang.bean.user;
+package com.lizhigang.bean.sys;
 
+/**
+ * 权限表
+ * @author lizhigang
+ */
 public class Jurisdiction {
     private Integer id;
 

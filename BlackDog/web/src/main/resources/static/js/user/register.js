@@ -1,5 +1,11 @@
 $(function(){
 
+    $('#userName').keyup(function(event) {
+        //alert("1")
+        $('.tel-warn').addClass('hide');
+        checkBtn();
+    });
+
     $('#num').keyup(function(event) {
         //alert("1")
         $('.tel-warn').addClass('hide');
@@ -26,12 +32,13 @@ $(function(){
 
     // 按钮是否可点击
     function checkBtn() {
+            var userName = $.trim($('#userName').val());
             var inp = $.trim($('#num').val());
             var pass = $.trim($('#pass').val());
             var pass2 = $.trim($('#pass2').val());
             var veriCode = $.trim($('#veriCode').val());
             //alert(inp+"-"+pass+"-"+pass2+"-"+veriCode);
-            if (inp != '' && pass != '' && pass2 != '' && veriCode != '') {
+            if (userName != '' && inp != '' && pass != '' && pass2 != '' && veriCode != '') {
                 $(".reg-btn").removeClass("off");
             } else {
                 $(".reg-btn").addClass("off");
@@ -73,11 +80,12 @@ $(function(){
             if($(this).hasClass('off')) {
                 return;
             }
+            var userName = $.trim($('#userName').val());
             var tel = $.trim($('#num').val());
             var pass = $.trim($('#pass').val());
             var pass2 = $.trim($('#pass2').val());
             var veriCode = $.trim($('#veriCode').val());
-            if (checkPhone(tel) && checkVeriCode(veriCode) && checkpass(pass, pass2) ) {
+            if (checkPhone(userName) && checkPhone(tel) && checkVeriCode(veriCode) && checkpass(pass, pass2) ) {
                 if (!($(".icon-ok-sign").hasClass("boxcol"))){
                     $('.agree-err').removeClass('hide').find("em").text('请同意BlackDog协议');
                     return;
@@ -88,8 +96,9 @@ $(function(){
                     type: 'post',
                     dataType: 'json',
                     async: true,
-                    data: {tel: tel, password: pass, password2: pass2, veriCode: veriCode},
+                    data: {userName:userName, tel: tel, password: pass, password2: pass2, veriCode: veriCode},
                     success: function (data) {
+                        alert(data.code);
                         if (data.code == 200) {
                             alert("注册成功");
                         } else if (data.code == 4001) {
